@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MenuPrincipal"
+    android:background="@color/white"
+    tools:showIn="@layout/activity_menu_principal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_favoritos"
+
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:stateListAnimator="@null"
+                    android:text="FAVORITOS"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/bt_buscar"
+
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="Buscar"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/bt_cerca"
+
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="Cerca"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/bt_compartir"
+
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="Compartir"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="69.5dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btn_destinos"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp"
+                    android:background="#00BCD4"
+                    android:paddingBottom="5dp"
+                    android:text="Destinos Turisticos"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_agencias"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp"
+                    android:background="#f5f5f5"
+                    android:onClick="agen"
+                    android:paddingBottom="5dp"
+                    android:text=" Agencias"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_restaurante"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="5dp"
+                    android:background="#f5fffa"
+                    android:text=" Restaurantes"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_hoteles"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="5dp"
+                    android:background="#f5f5f5"
+                    android:text=" Hoteles"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_museos"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="5dp"
+                    android:background="#f5fffa"
+                    android:text=" Museos e Iglesias"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+
+                <Button
+                    android:id="@+id/btn_mapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="5dp"
+                    android:background="#f5f5f5"
+                    android:text="  Mapa"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_conversor"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="5dp"
+                    android:background="#f5fffa"
+                    android:text="  Conversor de Moneda"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_informacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="5dp"
+                    android:includeFontPadding="true"
+                    android:background="#f5f5f5"
+                    android:drawablePadding="10dp"
+                    android:text=" Información General"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
